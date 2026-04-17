@@ -1,41 +1,57 @@
 import java.util.Scanner;
 
-public class DiseaseDetection {
+public class PlantIdentification {
 
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-        System.out.println("Plant Leaf Disease Detection System");
-        System.out.println("-----------------------------------");
-        System.out.println("Enter leaf condition:");
-        System.out.println("1. Healthy");
-        System.out.println("2. Rust");
-        System.out.println("3. Blight");
+        System.out.println("Enter Plant Name:");
+        String plant = sc.nextLine();
 
-        int choice = scanner.nextInt();
+        if (plant.equalsIgnoreCase("Neem")) {
 
-        switch(choice) {
+            System.out.println("\nPlant Identification Result");
+            System.out.println("---------------------------");
 
-            case 1:
-                System.out.println("Result: Plant is Healthy");
-                break;
+            System.out.println("\nPlant Name: Neem");
 
-            case 2:
-                System.out.println("Disease Detected: Leaf Rust");
-                System.out.println("Solution: Apply fungicide spray");
-                break;
+            System.out.println("\nBasic Information:");
+            System.out.println("This plant is good for humans and widely used for medicinal purposes.");
 
-            case 3:
-                System.out.println("Disease Detected: Leaf Blight");
-                System.out.println("Solution: Remove infected leaves");
-                break;
+            System.out.println("\nProducts Made From This Plant:");
+            System.out.println("Neem oil, herbal medicine, toothpaste, skin care products.");
 
-            default:
-                System.out.println("Invalid Input");
+            System.out.println("\nAgricultural Information:");
+            System.out.println("Best Location to Grow: Tropical and semi-tropical regions with warm climate.");
 
+            System.out.println("\nGrowth Details:");
+            System.out.println("Growth Height: Up to 20-25 feet");
+            System.out.println("Growth Rate: Medium growth rate");
+
+            System.out.println("\nWater Requirement:");
+            System.out.println("Can grow with less water but grows better with moderate rainfall.");
+
+            System.out.println("\nInsects Attraction:");
+            System.out.println("May attract aphids and caterpillars.");
+
+            System.out.println("\nInsects That Can Damage the Plant:");
+            System.out.println("Leaf miner insects and scale insects can damage the leaves.");
+
+            System.out.println("\nMarket Information:");
+            System.out.println("Market Value: Approximately ₹70 – ₹100 per kg (varies by market demand)");
+
+            System.out.println("\nPlant Protection:");
+            System.out.println("Use neem oil spray or organic pesticides to protect the plant.");
+
+            System.out.println("\nBenefits for Humans:");
+            System.out.println("Used for medicine, skin treatment, agriculture pesticides, and herbal products.");
         }
 
-        scanner.close();
+        else {
+            System.out.println("Plant data not available.");
+        }
+
+        sc.close();
     }
 }
