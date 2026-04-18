@@ -11,12 +11,12 @@ public class PlantIdentification {
 
         if (plant.equalsIgnoreCase("Neem")) {
 
-            System.out.println("\nPlant Identification Result");
+            System.out.println("\n🌴Plant Identification Result");
             System.out.println("---------------------------");
 
             System.out.println("\nPlant Name: Neem");
 
-            System.out.println("\nBasic Information:");
+            System.out.println("\n📖Basic Information:");
             System.out.println("This plant is good for humans and widely used for medicinal purposes.");
 
             System.out.println("\nProducts Made From This Plant:");
